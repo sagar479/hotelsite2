@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Website</title>
+  <style
+>/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Main sections */
+.main {
+  padding: 50px 0;
+}
+
+.rooms {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.rooms h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.room-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.room-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.room-card p {
+  font-size: 1.1em;
+}
+
+.gallery {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact {
+  background-color: #ffd700;
+  color: #333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #005ea6; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .rooms h2 {
+    font-size: 2em;
+  }
+
+  .gallery h2 {
+    font-size: 2em;
+  }
+
+  .contact h2 {
+    font-size: 2em;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Hostel Name</h1>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to Our Hostel</h2>
+        <p>Experience comfort and relaxation in the heart of the city.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="rooms" class="rooms">
+      <div class="container">
+        <h2>Our Rooms</h2>
+        <div class="room-card">
+          <img src="room1.jpg" alt="Room 1">
+          <h3>Single Room</h3>
+          <p>Perfect for solo travelers.</p>
+        </div>
+        <div class="room-card">
+          <img src="room2.jpg" alt="Room 2">
+          <h3>Double Room</h3>
+          <p>Great for couples or friends.</p>
+        </div>
+        <div class="room-card">
+          <img src="room3.jpg" alt="Room 3">
+          <h3>Family Room</h3>
+          <p>Spacious room for families.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+          <img src="gallery1.jpg" alt="Gallery Image 1">
+          <img src="gallery2.jpg" alt="Gallery Image 2">
+          <img src="gallery3.jpg" alt="Gallery Image 3">
+          <img src="gallery4.jpg" alt="Gallery Image 4">
+          <img src="gallery5.jpg" alt="Gallery Image 5">
+          <img src="gallery6.jpg" alt="Gallery Image 6">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Hostel Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Form submission handling
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // Example: Send form data to a backend or handle locally
+    console.log(`Form submitted with Name: ${name}, Email: ${email}, Message: ${message}`);
+
+    // Clear form fields after submission
+    form.reset();
+  });
+});
+</script> 
+</body>
+</html>
